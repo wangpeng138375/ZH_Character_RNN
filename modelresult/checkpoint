@@ -1,6 +1,0 @@
-model_checkpoint_path: "model.ckpt"
-all_model_checkpoint_paths: "model.ckpt-379747"
-all_model_checkpoint_paths: "model.ckpt-382660"
-all_model_checkpoint_paths: "model.ckpt-385203"
-all_model_checkpoint_paths: "ptb_word_small_sentence.final"
-all_model_checkpoint_paths: "model.ckpt"
