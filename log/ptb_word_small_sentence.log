@@ -1,0 +1,77 @@
+configuration:
+vocab_size	4100
+layer	LSTM
+data_path	/home/wangpeng/allcorpus/zh_character
+result	../log/out
+num_layers	2
+log	../log/ptb_word_small_sentence.log
+max_epoch	4
+lm	../modelresult/ptb_word_small_sentence.final
+num_steps	1
+word_size	200
+save_path	../modelresult
+lr_decay	0.5
+init_scale	0.1
+optimizer	sgd
+learning_rate	1
+per_sentence	True
+batch_size	1
+forget_bias	0
+max_grad_norm	5
+dropout	1
+nbest	../data/test
+vocab	False
+name	../modelresult/ptb_word_small_sentence
+max_max_epoch	1
+************************test phase ***********************
+Test/Model/SentData/sentence:0 =========================================dataids
+Test/Model/strided_slice:0 Test/Model/Slice:0 Test/Model/Slice_1:0 =================1000
+(LSTMStateTuple(c=<tf.Output 'Test/Model/zeros:0' shape=(1, 200) dtype=float32>, h=<tf.Output 'Test/Model/zeros_1:0' shape=(1, 200) dtype=float32>), LSTMStateTuple(c=<tf.Output 'Test/Model/zeros_2:0' shape=(1, 200) dtype=float32>, h=<tf.Output 'Test/Model/zeros_3:0' shape=(1, 200) dtype=float32>)) 1111111111111111
+Test/Model/embedding_lookup:0 ===============================22222222
+Output("Test/Model/Shape_1:0", shape=(2,), dtype=int32) Test/Model/Softmax:0
+Output("Test/Model/Shape_2:0", shape=(1,), dtype=int32) Test/Model/Reshape_2:0 9999999999999999999999999999
+Output("Test/Model/Shape_3:0", shape=(1,), dtype=int32) Test/Model/Gather:0
+../modelresult/ptb_word_small_sentence.final
+Start rescoring...
+[0, 904, 2292, 1589, 1] =============words_is 
+[0, 904, 2292, 1589, 1] ============================raw_data11111 <type 'int'>
+step 0
+[0, 904, 2292, 1589, 1]
+[0, 904]
+1.00053e-05 ==============================================ttrtradfasdfasdfasfakpropro
+step 1
+[0, 904, 2292, 1589, 1]
+[904, 2292]
+0.0165162 ==============================================ttrtradfasdfasdfasfakpropro
+step 2
+[0, 904, 2292, 1589, 1]
+[2292, 1589]
+0.0112008 ==============================================ttrtradfasdfasdfasfakpropro
+step 3
+[0, 904, 2292, 1589, 1]
+[1589, 1]
+0.0539514 ==============================================ttrtradfasdfasdfasfakpropro
+[1.0005346e-05, 0.016516227, 0.011200845, 0.053951439] =======================================result
+[0, 904, 2292, 1589, 179, 1] =============words_is 
+[0, 904, 2292, 1589, 179, 1] ============================raw_data11111 <type 'int'>
+step 0
+[0, 904, 2292, 1589, 179, 1]
+[0, 904]
+1.00053e-05 ==============================================ttrtradfasdfasdfasfakpropro
+step 1
+[0, 904, 2292, 1589, 179, 1]
+[904, 2292]
+0.0165162 ==============================================ttrtradfasdfasdfasfakpropro
+step 2
+[0, 904, 2292, 1589, 179, 1]
+[2292, 1589]
+0.0112008 ==============================================ttrtradfasdfasdfasfakpropro
+step 3
+[0, 904, 2292, 1589, 179, 1]
+[1589, 179]
+0.000453016 ==============================================ttrtradfasdfasdfasfakpropro
+step 4
+[0, 904, 2292, 1589, 179, 1]
+[179, 1]
+0.116739 ==============================================ttrtradfasdfasdfasfakpropro
+[1.0005346e-05, 0.016516227, 0.011200845, 0.00045301631, 0.11673928] =======================================result
